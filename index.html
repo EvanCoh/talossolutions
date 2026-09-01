@@ -6,10 +6,10 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="description" content="Talos Solutions builds serverless integrations for Norwegian real estate: Altinn, Maskinporten, Core, Webmegler, Vitec, Skatteetaten and Økokrim.">
+        <meta name="author" content="Talos Solutions">
 
-        <title>Talos Solutions</title>
+        <title>Talos Solutions — Norwegian real estate integrations</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -56,7 +56,13 @@
                             <a class="page-scroll" href="#about">About</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#applications">Applications</a>
+                            <a class="page-scroll" href="#work">Work</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#integrations">Integrations</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#applications">Services</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#contact">Contact</a>
@@ -75,7 +81,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <h1 class="brand-heading">Talos Solutions</h1>
-                            <p class="intro-text">Software development on steroids<br>We make your dreams come true</p>
+                            <p class="intro-text">Integrations for Norwegian real estate — serverless .NET<br>Altinn, Maskinporten, Core, Webmegler, Vitec</p>
                             <a href="#about" class="btn btn-circle page-scroll">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
@@ -90,42 +96,90 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>About Talos Solutions</h2>
-                    <p>Talos Solutions is a software company that focuses on developing solutions that
-                        benefit from the latest technological advances to satisfy every client's needs. 
-                    </p>
-                    <p>We have mastered numerous programming languages and areas of Informatics 
-                    to have an arsenal capable of solving any problem and necessity.</p>
+                    <p>We build the integration layer around Norwegian real estate: public registers, broker systems, and AML reporting. The work is serverless where that fits — Azure Functions, Key Vault, test and prod — so property software can call Skatteetaten, Altinn and Økokrim without owning that complexity.</p>
+                    <p>Typical buyers are eiendomsmeglere, proptech vendors, and product teams that need Maskinporten, matrikkel lookups, or an embeddable app inside Core, Webmegler or Vitec.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Download Section -->
-        <section id="applications" class="content-section text-center">
-            <div class="applications-section">
-                <div class="container">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Applications of Talos Solutions</h2>
-                        <p>Web applications, Portals, API services, CRMs</p>
-                        <p>PHP websites, Java web applications (Play! framework)</p>
-                        <p>Android applications (Java), iOS applications (Swift)<p>
-                        <p>Chatbots and <a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Artificial Intelligence</a> implementations</p>
-                        <p>Information extraction tools</p>
-                        <p>CRM integrations</p>
-                        <p>Real time (WebSockets) solutions</p>
-                        <p>Windows (C#) services</p>
-                        <p>Google Chrome plugins</p>
-                        <!--<a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>-->
+        <!-- Work Section -->
+        <section id="work" class="container content-section content-section-follow text-center">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Norwegian real estate work</h2>
+                    <p>Production systems for brokers and the platforms they already run — cadastral data, tax value, and suspicious-activity reporting — delivered as APIs and serverless services.</p>
+                    <div class="row work-grid">
+                        <div class="col-md-4 work-item">
+                            <h3>Property tax value</h3>
+                            <p>Serverless proxy to Skatteetaten Formuesverdi for <em>eiendomsmegler opplysningsplikt</em>. Matrikkel (kommune, gård, bruk, feste, seksjon) and boligselskap, scoped per organisation.</p>
+                        </div>
+                        <div class="col-md-4 work-item">
+                            <h3>AML reporting</h3>
+                            <p>Økokrim FIU / MFR integration so real-estate firms can create, validate and submit reports from their own workflow instead of a separate portal.</p>
+                        </div>
+                        <div class="col-md-4 work-item">
+                            <h3>Serverless integration</h3>
+                            <p>Azure Functions, Maskinporten tokens, Key Vault and observability (Application Insights / Datadog). Test and production, multi-tenant consumers, no secrets in the app.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Integrations Section -->
+        <section id="integrations" class="content-section content-section-follow text-center">
+            <div class="integrations-section">
+                <div class="container">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <h2>Integrations</h2>
+                        <p>We connect Norwegian public APIs and the broker systems used in the market.</p>
+                        <div class="row integration-grid">
+                            <div class="col-sm-6 col-md-4 integration-item">
+                                <h3>Altinn</h3>
+                                <p>Digital reporting and public-sector services. Organisation-scoped access, forms, and obligations that sit next to the broker workflow.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 integration-item">
+                                <h3>Maskinporten</h3>
+                                <p>Machine-to-machine tokens for Skatteetaten, Altinn, Økokrim and other Norwegian APIs. JWK in Key Vault, separate test and prod.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 integration-item">
+                                <h3>Core</h3>
+                                <p>Visma Real Estate Core — embeddable integrators, launch URLs and APIs inside the broker desktop, including marketing and compliance flows.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 integration-item">
+                                <h3>Webmegler</h3>
+                                <p>Integrations with Webmegler so listing data, valuation and reporting stay in the system many Norwegian offices already use.</p>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-md-offset-0 integration-item">
+                                <h3>Vitec</h3>
+                                <p>Vitec Next and related Nordic broker software — connecting the office system to public registers, tax value and AML APIs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="applications" class="container content-section content-section-follow text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>What we build</h2>
+                    <p>Serverless APIs and Azure Functions (.NET)</p>
+                    <p>Government API gateways (Altinn, Maskinporten, Skatteetaten, Økokrim)</p>
+                    <p>Broker-system integrations (Core, Webmegler, Vitec)</p>
+                    <p>Web applications, portals and CRM backends</p>
+                    <p>Secure multi-tenant APIs, test and production environments</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact Section -->
-        <section id="contact" class="container content-section text-center">
+        <section id="contact" class="container content-section content-section-follow text-center">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Contact Talos Solutions</h2>
-                    <p>Feel free to email us for any question you have in mind. If you need a project to be done, then let us know and we will provide you with our proposal.</p>
+                    <p>Need Maskinporten, a Core/Webmegler/Vitec integration, or a serverless API in front of a Norwegian public register? Email us and we will come back with a proposal.</p>
                     <p><a id="outlink" href=""></a>
                     </p>
                     <ul class="list-inline banner-social-buttons">
